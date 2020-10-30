@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "venta-coronas"
+    }
+  },
+  "defaultProject": "venta-coronas",
+  "cli": {
+    "analytics": "7d66d9e8-d877-4578-90d9-f0a0043e9748"
+  }
 }
