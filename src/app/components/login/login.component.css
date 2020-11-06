@@ -1,9 +1,24 @@
+body {
+    min-height: 100vh;
+    background-image: url("../../../assets/img/navidad.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imagen-fondo-emergente {
+    background-image: url("../../../assets/img/pantallas-emergentes.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .contenedor {
-    background-color: silver;
+    border-radius: 15px;
     margin-top: 10px;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding-top: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+    padding: 20px;
     text-align: center;
 }
 
@@ -11,13 +26,12 @@
     width: 100%;
 }
 
-h1 {
-    color: rgb(170, 11, 10);
-}
-
 .texto {
     text-align: center;
     font-size: 20px;
     font-family: sans-serif;
-    color: rgb(170, 11, 10);
+}
+
+.clase-modal-registro {
+    border-radius: 20px;
 }

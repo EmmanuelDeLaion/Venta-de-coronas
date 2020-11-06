@@ -1,31 +1,92 @@
-<div class="row">
-    <div class="col-6">
-        <div class="row  align-items-center vh-100">
-            <h1 class="container text-center">Inicia sesión para adquirir productor</h1>
+<body class="clase-fondo">
+    <div class="row">
+
+        <div class="col-6">
+            <div class="row  align-items-center vh-100">
+                <h1 class="container text-center text-light">Inicia sesión para adquirir productor</h1>
+            </div>
+
         </div>
+        <div class="col-6">
+            <div class="row justify-content-center align-items-center vh-100 ">
+                <div class="col-sm-8 ">
+                    <form class="container bg-white contenedor mt-5 pt-5 mr-5">
+                        <div class="form-group mx-sm-6">
+                            <h1 class="container text-ligth">Iniciar sesión</h1><br>
+                            <label class="texto text-ligth" for="exampleInputEmail1">Correo Electronico</label>
+                            <input type="email" class="form-control entrada" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label class="texto" for="exampleInputPassword1">Contraseña</label>
+                            <input type="password" class="form-control entrada">
+                            <a type="button" class="text-dark" data-toggle="modal" data-target="#recuperarContraseña">Olvide mi contraseña</a>
+                        </div>
 
-    </div> 
-    <div class="col-6">
-        <div class="row justify-content-center align-items-center vh-100 ">
-            <div class="col-sm-8 ">
-                <form class="container bg-mid-gray contenedor mt-5 pt-5 mr-5">
-                    <div class="form-group mx-sm-6">
-                        <h1 style="text-size: 30px; color: rgb(170, 11, 10);">Iniciar sesión</h1><br>
-                        <label class="texto" for="exampleInputEmail1">Correo Electronico</label>
-                        <input type="email" class="form-control entrada" aria-describedby="emailHelp">
+                        <button type="submit" class="btn btn-danger">Iniciar sesión</button>
+                        <p class="text-dark">¿No tienes cuenta? <a type="button" class="text-danger" data-toggle="modal" data-target="#registroPersonas">Registrate</a></p>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Ventana emergente de Registrar personas-->
+    <div class="modal fade" id="registroPersonas" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content clase-modal-registro imagen-fondo-emergente">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-group mx-sm-4">
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="form-group mx-sm-4">
+                            <input type="text" class="form-control" placeholder="Apellido">
+                        </div>
+                        <div class="form-group mx-sm-4">
+                            <input type="text" class="form-control" placeholder="Usuario">
+                        </div>
+                        <div class="form-group mx-sm-4">
+                            <input type="text" class="form-control" placeholder="Correo">
+                        </div>
+                        <div class="form-group mx-sm-4">
+                            <input type="password" class="form-control" placeholder="Contraseña">
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label class="texto" for="exampleInputPassword1">Contraseña</label>
 
-                        <input type="password" class="form-control entrada">
-                        <a href="#" class="text-dark">Olvide mi contraseña</a>
-                    </div>
-
-                    <button type="submit" class="btn btn-danger">Iniciar sesión</button>
-                    <p class="text-dark">¿No tienes cuenta? <a class="text-danger">Registrate</a></p>
-                </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Aceptar</button>
+                </div>
             </div>
         </div>
-
     </div>
-</div>
+
+    <!-- Ventana emergente de Recuperar Contraseña-->
+    <div class="modal fade" id="recuperarContraseña" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content clase-modal-registro imagen-fondo-emergente">
+                <div class="modal-header">
+                    <h4 class="modal-title text-secondary "></h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="form-group mx-sm-4">
+                            <input type="text" class="form-control" placeholder="Correo electronico">
+                        </div>
+                        <div class="form-group mx-sm-4">
+                            <input type="password" class="form-control" placeholder="Nueva Contraseña">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">Recuperar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
