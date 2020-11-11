@@ -9,6 +9,8 @@ import {APP_ROUTING} from './rutas';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProductosComponent } from './components/productos/productos.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +18,8 @@ import { LoginComponent } from './components/login/login.component';
     NavbarComponent,
     FooterComponent,
     LoginComponent,
+    ProductosComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
