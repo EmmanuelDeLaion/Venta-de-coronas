@@ -3,7 +3,7 @@
 
         <div class="col-6">
             <div class="row  align-items-center vh-100">
-                <h1 class="container text-center text-light">Inicia sesión para adquirir productor</h1>
+                <h1 class="container text-center text-light">Inicia sesión para adquirir productos</h1>
             </div>
 
         </div>
@@ -13,17 +13,19 @@
                     <form class="container bg-white contenedor mt-5 pt-5 mr-5">
                         <div class="form-group mx-sm-6">
                             <h1 class="container text-ligth">Iniciar sesión</h1><br>
-                            <label class="texto text-ligth" for="exampleInputEmail1">Correo Electronico</label>
+                            <label class="texto text-ligth" for="exampleInputEmail1">Correo Electrónico</label>
                             <input type="email" class="form-control entrada" aria-describedby="emailHelp">
                         </div>
                         <div class="form-group">
                             <label class="texto" for="exampleInputPassword1">Contraseña</label>
                             <input type="password" class="form-control entrada">
-                            <a type="button" class="text-dark" data-toggle="modal" data-target="#recuperarContraseña">Olvide mi contraseña</a>
+                            <a type="button" class="text-dark" data-toggle="modal" data-target="#recuperarContraseña">Olvidé mi contraseña</a>
                         </div>
+
 
                         <button type="submit" class="btn btn-danger" [routerLink]="['home']">Iniciar sesión</button>
                         <p class="text-dark">¿No tienes cuenta? <a type="button" class="text-danger" data-toggle="modal" data-target="#registroPersonas">Registrate</a></p>
+                      
                     </form>
                 </div>
             </div>
@@ -76,7 +78,7 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="form-group mx-sm-4">
-                            <input type="text" class="form-control" placeholder="Correo electronico">
+                            <input type="text" class="form-control" placeholder="Correo electrónico">
                         </div>
                         <div class="form-group mx-sm-4">
                             <input type="password" class="form-control" placeholder="Nueva Contraseña">

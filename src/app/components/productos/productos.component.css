@@ -1,0 +1,26 @@
+.producto {
+    width: 70%;
+    height: 70px;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+
+.producto-imgGrande {
+    width: 500px;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.Descripcion {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#descuento {
+    font-size: small;
+}
+
+#stock {
+    font-size: x-small;
+}
