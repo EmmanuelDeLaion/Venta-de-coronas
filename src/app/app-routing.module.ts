@@ -11,6 +11,8 @@ const routes:Routes =[
     {path: 'login/home', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'productos', component: ProductosComponent},
+
+    
     {path: '**',pathMatch: 'full', redirectTo:'home'}
 
 ];

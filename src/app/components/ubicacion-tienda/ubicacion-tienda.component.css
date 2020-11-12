@@ -1,0 +1,16 @@
+.mapa {
+    background: url(/../assets/img/mapa.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px;
+}
+
+.fondo-cont {
+    background-color:  rgb(170, 11, 10);
+    color: white;
+}
+ 
+.badge-mapa-btn {
+    background-color:  rgb(170, 11, 10);
+    color: #fff;
+    border-radius: 150px;
+}
