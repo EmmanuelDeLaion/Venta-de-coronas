@@ -4,8 +4,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module'
 import { from } from 'rxjs';
 
-import {APP_ROUTING} from './rutas';
-
+ 
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
@@ -27,8 +26,7 @@ import { HomeComponent } from './components/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    APP_ROUTING
-  ],
+],
   providers: [],
   bootstrap: [AppComponent]
 })

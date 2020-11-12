@@ -1,10 +1,10 @@
 <nav class="color-nav navbar navbar-dark">
-    <a class="navbar-brand" href="#">
+    <a  [routerLink]="['home']" class="navbar-brand" href="#">
         <img class="clase-logo" src="../../assets/img/Grupo4.png" alt="" loading="lazy">
     </a>
     <form class="form-inline">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn text-light bg-success my-2 my-sm-0" type="submit">Search</button>
-        <button class="btn text-danger bg-light ml-2 my-2 my-sm-0" type="submit">login</button>
+        <button [routerLink]="['login']" class="btn text-danger bg-light ml-2 my-2 my-sm-0" type="submit">login</button>
     </form>
 </nav>
