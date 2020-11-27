@@ -1,0 +1,16 @@
+.contenedor {
+    border-radius: 15px;
+    margin-top: 10px;
+    box-shadow: 10px 10px 10px 10px black;
+    padding: 20px;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url("../../../assets/img/navidad.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
