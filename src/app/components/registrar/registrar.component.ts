@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { BdService } from 'src/app/services/bd.service';
 
 @Component({
   selector: 'app-registrar',
@@ -7,9 +8,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistrarComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private servicio: BdService) { }
+ 
+  
+  users={
+    nombre:null,
+    apellido:null,
+    usuario:null,
+    correo:null,
+    contrasenia:null
   }
 
+  ngOnInit(): void{
+  }
+
+  agregarUsuario(){
+    
+    this.servicio.agregarUsuario(this.users).subscribe(datos => {
+      if(datos['resultado'] === 'OK'){
+        alert(datos['mensaje']);
+      }
+    });
+  }
+  
 }
